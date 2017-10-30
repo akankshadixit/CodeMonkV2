@@ -1,6 +1,8 @@
 /*
 
-as in x-1, the rightmost 1 and bits right to it are flipped, then by performing x&(x-1), and storing it in x, will reduce x to a number containing number of ones(in its binary form) less than the previous state of x, thus increasing the value of count in each iteration.
+As in x-1, the rightmost 1 and bits right to it are flipped, then by performing x&(x-1), 
+and storing it in x, will reduce x to a number containing number of ones(in its binary form) less than the previous state of x, 
+thus increasing the value of count in each iteration.
 
 Example:
 n = 23 = {10111}2 .
