@@ -23,17 +23,27 @@ void insertion_sort(int a[], int n)
     int j = 0;
 
 
+
+/*storing current element whose left side is checked for its 
+             correct position .*/
+
     for(int i =0;i<n;i++)
     {
         temp = a[i];
         j =i;
 
+/* check whether the adjacent element in left side is greater or
+            less than the current element. */
+
         while(j>0 && temp<a[j-1])
         {
+
+// moving the left side element to one position forward.
             a[j] = a[j-1];
             j =j-1;
         }
 
+ // moving current element to its  correct position.
         a[j] = temp;
 
     }

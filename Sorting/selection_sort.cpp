@@ -17,20 +17,24 @@ using namespace std;
 void selection_sort(int a[], int n)
 {
 
-  int mini, temp;
+  int mini;
+  int temp;      // temporary variable to store the position of minimum element
 
-  for(int i =0;i<n;i++)
+  for(int i =0;i<n;i++)      // reduces the effective size of the array by one in  each iteration.
+
   {
-      mini = i;
+      mini = i;              // assuming the first element to be the minimum of the unsorted array .
+
+ // gives the effective size of the unsorted  array .
       for(int j = i+1;j<n;j++)
       {
           if(a[mini]>a[j])
           {
-             mini = j;
+             mini = j;           //finds the minimum element
           }
       }
 
-       temp = a[mini];
+          temp = a[mini];
           a[mini] = a[i];
           a[i] = temp;
   }
